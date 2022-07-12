@@ -197,21 +197,17 @@ function App() {
       
       {showResults ? (
         <div className="final-results">
-          <div>
-            <h3>Patient Score</h3>
-            <div>{score}</div>
-            <p>
-              {`There is a ${recommendation()} likelihood that the patient will benefit from pelvic floor physical therapy.` }
-            </p>
+          <div class="flex flex-col align-center">
+            <div class='border jsutify-center'>
+              <h3>Patient Score</h3>
+              <div>{score}</div>
+            </div>
+            <div>
+              <p>
+                {`There is a ${recommendation()} likelihood that the patient will benefit from pelvic floor physical therapy.` }
+              </p>
+            </div>
             
-            {/* {answers.map((item, index )=>{
-              return(
-                <div key={index}>
-                  {item.Question}:
-                  {item.Answer}
-                </div>
-              )
-            })} */}
           </div>
           <div class="flex flex-row justify-center">
           {/* <input value={value} onChange={e => setValue(e.target.value)}/> */}
